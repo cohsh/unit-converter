@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unit Converter</title>
+    <link rel='stylesheet' href='style.css'>
+    <script>
+        MathJax = {
+          chtml: {
+            matchFontHeight: false
+          },
+          tex: {
+            inlineMath: [['$', '$']]
+          }
+        };
+        </script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+        <script type="text/javascript" src="converter.js"></script>
+  </head>
+<body>
+  <h2>Unit Converter</h2>
+  <h3>Solid State Physics</h3>
+  <table>
+    <tr>
+        <td>Length</td>
+        <td><input type="number" id="meter" oninput="length(this.id,this.value)" onchange="length(this.id,this.value)">$\mathrm{m}$</td>
+        <td><input type="number" id="bohr" oninput="length(this.id,this.value)" onchange="length(this.id,this.value)">$a_\mathrm{B}$</td>
+        <td><input type="number" name="length" id="angstrom" oninput="length(this.id,this.value)" onchange="length(this.id,this.value)">Å</td>
+        <td></td>
+    </tr>
+    <tr>
+      <td>Mass</td>
+      <td><input type="number" id="kg" oninput="mass(this.id,this.value)" onchange="mass(this.id,this.value)">$\mathrm{kg}$</td>
+      <td><input type="number" id="me" oninput="mass(this.id,this.value)" onchange="mass(this.id,this.value)">$m_\mathrm{e}$</td>
+      <td><input type="number" id="dalton" oninput="mass(this.id,this.value)" onchange="mass(this.id,this.value)">$\mathrm{Da}$</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td><input type="number" id="s" oninput="time(this.id,this.value)" onchange="time(this.id,this.value)">$\mathrm{s}$</td>
+      <td><input type="number" id="at" oninput="time(this.id,this.value)" onchange="time(this.id,this.value)">$\hbar / E_\mathrm{h}$</td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td><input type="number" id="J" oninput="energy(this.id,this.value)" onchange="energy(this.id,this.value)">$\mathrm{J}$</td>
+      <td><input type="number" id="Eh" oninput="energy(this.id,this.value)" onchange="energy(this.id,this.value)">$E_\mathrm{h}$</td>
+      <td><input type="number" id="eV" oninput="energy(this.id,this.value)" onchange="energy(this.id,this.value)">$\mathrm{eV}$</td>
+      <td><input type="number" id="Ry" oninput="energy(this.id,this.value)" onchange="energy(this.id,this.value)">$\mathrm{Ry}$</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td><input type="number" id="K" oninput="temperture(this.id,this.value)" onchange="temperture(this.id,this.value)">$\mathrm{K}$</td>
+      <td><input type="number" id="kT" oninput="temperture(this.id,this.value)" onchange="temperture(this.id,this.value)">$E_\mathrm{h}$</td>
+    </tr>
+    <tr>
+      <td>Wavenumber</td>
+      <td><input type="number" id="kayser" oninput="wn(this.id,this.value)" onchange="wn(this.id,this.value)">$\mathrm{kayser}$</td>
+      <td><input type="number" id="meV" oninput="wn(this.id,this.value)" onchange="wn(this.id,this.value)">$\mathrm{meV}$</td>
+    </tr>
+  </table>
+</body>
+</html>
