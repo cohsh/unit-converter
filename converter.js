@@ -123,15 +123,3 @@ function wn(x,y){
         y_kayser.value = fix(y * 1.0E-3 * eV2J / 1.986E-23);
     }
 }
-
-function dw(x,y){
-    y = parseFloat(y);
-    var y_Bfactor = document.getElementById("Bfactor");
-    var y_MSD = document.getElementById("MSD");
-    if (x=="Bfactor"){
-        y_MSD.value = fix(y / (8.0*pi**2)*AA2m**2/(bohr2m**2));
-    }
-    if (x=="MSD"){
-        y_Bfactor.value = fix(y * bohr2m**2/(AA2m**2)*8.0*pi**2 );
-    }
-}
