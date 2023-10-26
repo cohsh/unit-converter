@@ -1,4 +1,5 @@
 # Unit Converter for Solid State Physics
+[![pages-build-deployment](https://github.com/cohsh/unit-converter/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/cohsh/unit-converter/actions/workflows/pages/pages-build-deployment)
 
 ## Screenshot
 ![Screenshot](screenshot.png)
